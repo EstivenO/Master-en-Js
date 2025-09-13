@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>PERFIL <em>ESTIVEN ORTIZ</em></h1>
+    <h1>FORMUARIO <em>DE CONTACTO</em></h1>
 
     <ul>
         <li><a href="PrimeraPagina.html">PERFIL</a></li>
@@ -15,19 +15,21 @@
         <li><a href="TerceraPagina.html">CONTACTO</a></li>
     </ul>
 
-    <h2>Estiven Ortiz- Desarrollo Web</h2>
-    <img src="img/Estiven.jpg" alt="Esta es la foto de perfil" title="Estiven" width="250px">
-    <p>
-        Soy Estiven Ortiz, un desarrollador web full stack apasionado 
-        por la tecnología y la creación de soluciones innovadoras. 
-        Cuento con experiencia en el diseño, 
-        desarrollo y despliegue de aplicaciones web utilizando 
-        tecnologías modernas tanto en el frontend como en el backend. 
-        Me especializo en la construcción de sitios web dinámicos, 
-        optimizados y seguros, siempre enfocado en ofrecer la mejor experiencia al usuario 
-        y cumplir con los objetivos del cliente. Manejo las herramientas básicas de desarrollo web, 
-        incluyendo bases de datos y lenguajes de lado del cliente.
-    </p>
+    <hr/>
+
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
     
 </body>
 </html>
