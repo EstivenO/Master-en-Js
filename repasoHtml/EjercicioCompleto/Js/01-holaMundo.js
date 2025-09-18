@@ -1,0 +1,1 @@
+document.writeln("Hola mundo, desde el curso de Js y desde fichero independiente");
