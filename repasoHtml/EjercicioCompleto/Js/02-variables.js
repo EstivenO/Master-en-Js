@@ -4,7 +4,7 @@
 
 var pais = "Colombia";
 var continente = "America";
-var pais_y_continente = pais + " " + continente;
+var pais_y_continente = pais + " " + continente; // DE ESTA MANERASE PUEDE CONCATENAR VARIABLES
 
 console.log(pais, continente);
 alert(pais_y_continente);
