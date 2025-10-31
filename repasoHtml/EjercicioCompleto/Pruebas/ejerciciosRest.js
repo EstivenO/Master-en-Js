@@ -45,14 +45,42 @@
 
 /** EJERCICIO 4 REST */
 
-function filtrarMayores(umbral,...numeros){
-    let mayores = [];
-    for (let numero of numeros){
-        if(typeof numero === 'number' && numero > umbral){
-            mayores.push(numero);
-        }
+// function filtrarMayores(umbral,...numeros){
+//     let mayores = [];
+//     for (let numero of numeros){
+//         if(typeof numero === 'number' && numero > umbral){
+//             mayores.push(numero);
+//         }
+//     }
+//     return mayores;
+// }
+
+// console.log(filtrarMayores(10, 1, 5, 13, 15)); // Debería retornar [13, 15]
+
+//**EJERCICIO 5 REST */
+
+// function contarArgumentos(...argumentos){
+
+//     console.log(argumentos.length);
+// }
+
+// console.log(contarArgumentos(1, 2, 3)); // 3
+// console.log(contarArgumentos()); // 0
+
+/**EJERCICIO 6 REST */
+
+function promedio(...numeros){
+    let suma = 0
+    for ( let n of numeros){
+        suma += n;
     }
-    return mayores;
+    if(numeros.length > 0){
+        return (suma / numeros.length);
+    }else{
+        return 0;
+    }
+    
 }
 
-console.log(filtrarMayores(10, 1, 5, 13, 15)); // Debería retornar [13, 15]
+console.log(promedio(5, 10, 15)); // 10
+console.log(promedio()); // 0
