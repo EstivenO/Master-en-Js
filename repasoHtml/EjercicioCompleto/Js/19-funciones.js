@@ -13,7 +13,7 @@ function saludo(){
     return "Hola desde la parte que retorna";
 }
 
-//asi se invoca a lla funcion
+//asi se invoca a la funcion
 saludo();
 
 let variableRetorn = saludo();
